@@ -30,23 +30,20 @@ public class BaseTest {
         driver.quit();
     }
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
+   
     public BasePage getBasePage() {
-        return new BasePage(getDriver());
+        return new BasePage(driver);
     }
 
     public HomePage getHomePage() {
-        return new HomePage(getDriver());
+        return new HomePage(driver);
     }
 
     public NewsPage getNewsPage() {
-        return new NewsPage(getDriver());
+        return new NewsPage(driver);
     }
 
     public FormPage getFormPage() {
-        return new FormPage(getDriver());
+        return new FormPage(driver);
     }
 }
