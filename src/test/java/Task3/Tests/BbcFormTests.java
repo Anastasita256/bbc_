@@ -20,10 +20,11 @@ public class BbcFormTests extends BaseTest{
         getHomePage()
             .clickOnNews();
             .waitVisibilityOfPopup(30, getNewsPage().getPopup());
-        getNewsPage().clickOnClosePopup();
-        getNewsPage().clickOnCoronavirusTab();
-        getNewsPage().clickYourStory();
-        getNewsPage().clickOnShare();
+        getNewsPage()
+            .clickOnClosePopup();
+            .clickOnCoronavirusTab();
+            .clickYourStory();
+            .clickOnShare();
         getFormPage().nameInput(INPUT_NAME);
         getFormPage().contactInput(INPUT_CONTACT);
         getFormPage().location(INPUT_LOCATION);
@@ -38,10 +39,11 @@ public class BbcFormTests extends BaseTest{
         getHomePage()
             .clickOnNews();
             .waitVisibilityOfPopup(30, getNewsPage().getPopup());
-        getNewsPage().clickOnClosePopup();
-        getNewsPage().clickOnCoronavirusTab();
-        getNewsPage().clickYourStory();
-        getNewsPage().clickOnShare();
+        getNewsPage()
+            .clickOnClosePopup();
+            .clickOnCoronavirusTab();
+            .clickYourStory();
+            .clickOnShare();
         getFormPage().nameInput(INPUT_NAME);
         getFormPage().contactInput(INPUT_CONTACT);
         getFormPage().location(INPUT_LOCATION);
@@ -58,10 +60,11 @@ public class BbcFormTests extends BaseTest{
         getHomePage()
             .clickOnNews();
             .waitVisibilityOfPopup(30, getNewsPage().getPopup());
-        getNewsPage().clickOnClosePopup();
-        getNewsPage().clickOnCoronavirusTab();
-        getNewsPage().clickYourStory();
-        getNewsPage().clickOnShare();
+        getNewsPage()
+            .clickOnClosePopup();
+            .clickOnCoronavirusTab();
+            .clickYourStory();
+            .clickOnShare();
         getFormPage().textarea(TEXT);
         getFormPage().nameInput(INPUT_NAME);
         getFormPage().contactInput(INPUT_CONTACT);
