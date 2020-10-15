@@ -18,7 +18,7 @@ public class BbcFormTests extends BaseTest{
     @Test
     public void submitNewsWithOutRequiredCheckBoxClick() {
         getHomePage().clickOnNews();
-        getBasePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
+        getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
         getNewsPage().clickOnClosePopup();
         getNewsPage().clickOnCoronavirusTab();
         getNewsPage().clickYourStory();
@@ -35,7 +35,7 @@ public class BbcFormTests extends BaseTest{
     @Test
     public void submitNewsWithInvalidEmail() {
         getHomePage().clickOnNews();
-        getBasePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
+        getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
         getNewsPage().clickOnClosePopup();
         getNewsPage().clickOnCoronavirusTab();
         getNewsPage().clickYourStory();
@@ -54,7 +54,7 @@ public class BbcFormTests extends BaseTest{
     @Test
     public void submitNewsWithEmptyTextBox() {
         getHomePage().clickOnNews();
-        getBasePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
+        getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
         getNewsPage().clickOnClosePopup();
         getNewsPage().clickOnCoronavirusTab();
         getNewsPage().clickYourStory();
