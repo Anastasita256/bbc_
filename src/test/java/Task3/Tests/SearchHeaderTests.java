@@ -10,8 +10,9 @@ public class SearchHeaderTests extends BaseTest{
    
      @Test
     public void checkSecondaryArticleTitles() {
-        getHomePage().clickOnNews();
-        getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
+        getHomePage()
+             .clickOnNews();
+             .waitVisibilityOfPopup(30, getNewsPage().getPopup());
         getNewsPage().clickOnClosePopup();
 
         assertEquals(getNewsPage().getNewsCount(), 15);
@@ -19,16 +20,18 @@ public class SearchHeaderTests extends BaseTest{
 
     @Test
     public void findHeadLineArticle() {
-        getHomePage().clickOnNews();
-        getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
+        getHomePage()
+             .clickOnNews();
+             .waitVisibilityOfPopup(30, getNewsPage().getPopup());
         getNewsPage().clickOnClosePopup();
 
     }
 
     @Test
     public void checkFirstArticleName() {
-        getHomePage().clickOnNews();
-        getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
+        getHomePage()
+             .clickOnNews();
+             .waitVisibilityOfPopup(30, getNewsPage().getPopup());
         getNewsPage().clickOnClosePopup();
 
         }
