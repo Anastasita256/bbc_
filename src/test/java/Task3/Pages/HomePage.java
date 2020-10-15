@@ -12,7 +12,8 @@ public class HomePage extends BasePage{
         super(driver);
     }
 
-    public void clickOnNews() {
+    public HomePage clickOnNews() {
         driver.findElement(NEWS_BUTTON).click();
+        return this;
     }
 }
