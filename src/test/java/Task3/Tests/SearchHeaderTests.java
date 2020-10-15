@@ -6,8 +6,9 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class SearchHeaderTests extends BaseTest{
-     private String EXPECTED_MESSAGE = "US city police chiefs quit after 'spit hood' death";
-    @Test
+     private final String EXPECTED_MESSAGE = "US city police chiefs quit after 'spit hood' death";
+   
+     @Test
     public void checkSecondaryArticleTitles() {
         getHomePage().clickOnNews();
         getHomePage().waitVisibilityOfPopup(30, getNewsPage().getPopup());
