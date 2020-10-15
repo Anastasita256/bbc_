@@ -23,8 +23,9 @@ public class NewsPage extends BasePage{
         return POPUP;
     }
 
-    public void clickOnClosePopup() {
+    public NewsPage clickOnClosePopup() {
         driver.findElement(CLOSEPOPUP).click();
+        return this;
     }
 
     public int getNewsCount() {
@@ -34,16 +35,19 @@ public class NewsPage extends BasePage{
         return driver.findElements(SEARCH_RESULTS_LIST_TEXT);
     }
 
-    public void clickOnCoronavirusTab() {
+    public NewsPage clickOnCoronavirusTab() {
         driver.findElement(CORONAVIRUSTAB).click();
+        return this;
     }
 
-    public void clickYourStory() {
+    public NewsPage clickYourStory() {
         driver.findElement(STORY).click();
+        return this;
     }
 
-    public void clickOnShare() {
+    public NewsPage clickOnShare() {
         driver.findElement(SHARE).click();
+        return this;
     }
 
 
