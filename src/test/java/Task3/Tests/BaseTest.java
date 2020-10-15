@@ -31,11 +31,7 @@ public class BaseTest {
     }
 
    
-    public BasePage getBasePage() {
-        return new BasePage(driver);
-    }
-
-    public HomePage getHomePage() {
+   public HomePage getHomePage() {
         return new HomePage(driver);
     }
 
