@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class BasePage {
-    WebDriver driver;
+public abstract class BasePage {
+    protected WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -24,7 +24,7 @@ public class BasePage {
                 webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
     }
 
-    public void waitVisibilityOfPopup(long timeToWait, By locator) {
+    public void waitVisibilityOfPopup(int timeToWait, By locator) {
         WebDriverWait wait = new WebDriverWait(driver, timeToWait);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
