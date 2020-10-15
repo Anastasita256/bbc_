@@ -8,12 +8,12 @@ import static org.testng.Assert.assertTrue;
 
 public class BbcFormTests extends BaseTest{
 
-    private String INPUT_NAME = "Anastasiia";
-    private String INPUT_CONTACT = "1432";
-    private String INPUT_LOCATION = "Ukraine";
-    private String EXPECTED_URL = "news";
-    private String INPUT_EMAIL = "345@gmail.com";
-    private String TEXT = "hello coronavirus";
+    private final String INPUT_NAME = "Anastasiia";
+    private final String INPUT_CONTACT = "1432";
+    private final String INPUT_LOCATION = "Ukraine";
+    private final String EXPECTED_URL = "news";
+    private final String INPUT_EMAIL = "345@gmail.com";
+    private final String TEXT = "hello coronavirus";
 
     @Test
     public void submitNewsWithOutRequiredCheckBoxClick() {
